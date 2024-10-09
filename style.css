@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Oswald', sans-serif ;
+}
+
+body{
+    background: url(mosaicos/History\ GGM.png);
+    background-color: #ffffffbf;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(1, 92, 1);
+}
+.navegacion{
+    position: fixed; 
+    top: 0;
+    left: 10%; 
+    background-color: #0a4e01;
+    padding: 10px; 
+    z-index: 1000;
+    width: 100%;
+}
+
+
+.interior{
+    max-width: 100%;
+    padding: 0 10px;
+    margin: auto;
+}
+.logo{
+    float: left;
+    padding: 5px 20px 0;
+   
+}
+.logo img{
+    height: 80px;
+    position: fixed;
+}
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+.navegacion{
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+    z-index: 1000;
+    min-width: 300px;
+}
+.navegacion ul{
+    list-style: none;
+    padding: 0 10px;
+    min-width: 300px;
+}
+.navegacion ul li{
+    display: inline-block;
+    position: relative;
+    transition: .3s linear;
+    z-index: 1000;
+    
+}
+.navegacion ul li:hover{
+    transform: scale(1.1);
+}
+.navegacion ul li a{
+    color: #f7f0f0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: .3s linear;
+}
+.navegacion ul li a:hover{
+    color: #40ee0b;
+    transform: scale(1.1);
+}
+.navegacion ul li:hover .hijos{
+    display: block;
+}
+.navegacion .submenu .hijos{
+    display: none;
+    background: #258607;
+    position: absolute;
+    width: 100%;
+}
+.navegacion .submenu .hijos li{
+    display: block;
+    overflow: hidden;
+    border-bottom: none;
+}
+.navegacion .submenu .hijos li a{
+    display: block;
+}
+.galeria{
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+.galeria img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    border: 100px;
+}
+.galeria img:hover{
+    cursor: crosshair;
+    width: 50%;
+    height: 50%;
+    opacity: 1;
+    filter: opacity(120%);
+}
+.texto h4{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 40px;
+    text-align: center;
+    color: #0a4e01;
+}
+.footer {
+    background-color: #126e00; 
+    color: #fff; 
+    padding: 10px;
+    text-align: center; 
+    font-size: 12px; 
+  }
+  
+  .social-media {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .social-media li {
+    margin: 0 5px; 
+  }
+  
+  .social-media a {
+    color: #fff; 
+    text-decoration: none; 
+  }
+  
+  .social-media a:hover {
+    color: #ccc; 
+  }
+  
+  
+  
